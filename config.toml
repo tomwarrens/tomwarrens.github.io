@@ -2,13 +2,41 @@ baseURL = "https://tomwarrens.github.io/"
 languageCode = "en-us"
 title = "Tommaso Guerrini"
 theme = "PaperMod"
+enableRobotsTXT = true
+
+# Personal landing page setup (not a blog).
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[outputs]
+  home = ["HTML"]
 
 [params]
   author = "Tommaso Guerrini"
   ShowReadingTime = false
   ShowShareButtons = false
-  ShowCodeCopyButtons = true
+  ShowCodeCopyButtons = false
   defaultTheme = "auto"
+
+  [params.profileMode]
+    enabled = true
+    title = "Tommaso Guerrini"
+    subtitle = "Data Scientist focused on improving real-world ML systems and decision engines."
+
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about/"
+
+    [[params.profileMode.buttons]]
+      name = "Work"
+      url = "/work/"
+
+    [[params.profileMode.buttons]]
+      name = "CV"
+      url = "/cv/"
+
+    [[params.profileMode.buttons]]
+      name = "Contact"
+      url = "/contact/"
 
 [menu]
 
@@ -17,3 +45,21 @@ theme = "PaperMod"
     name = "About"
     url = "/about/"
     weight = 10
+
+  [[menu.main]]
+    identifier = "work"
+    name = "Work"
+    url = "/work/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/cv/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 40

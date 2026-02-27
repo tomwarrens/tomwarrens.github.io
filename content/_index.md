@@ -1,7 +1,3 @@
 ---
-title: "Tommaso Guerrini"
+title: "Home"
 ---
-
-Data Scientist specialized in improving real-world ML systems.
-
-If you call me, your models get better.
