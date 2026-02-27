@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,18 +14,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
 
-      - uses: peaceiris/actions-hugo@v2
+      - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: "0.150.0"
+          extended: true
 
-      - run: hugo --minify
+      - name: Verify PaperMod is checked out
+        run: test -f themes/PaperMod/layouts/_default/baseof.html
 
-      - uses: peaceiris/actions-gh-pages@v3
+      - name: Build
+        run: hugo --gc --minify
+
+      - name: Verify profile-mode home was rendered
+        run: grep -n 'class="profile"' public/index.html
+
+      - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          enable_jekyll: false
+          force_orphan: true
