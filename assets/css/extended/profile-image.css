@@ -1,0 +1,7 @@
+/* Keep the profile hero image in its native landscape ratio and scale it responsively. */
+.profile .profile_inner > img {
+    width: min(92vw, 980px);
+    max-width: min(92vw, 980px);
+    height: auto;
+    border-radius: 14px;
+}

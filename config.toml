@@ -23,8 +23,8 @@ disableKinds = ["taxonomy", "term", "RSS"]
     subtitle = "Data Scientist focused on improving real-world ML systems and decision engines."
     imageUrl = "/images/monumentvalley.png"
     imageTitle = "Monument Valley"
-    imageWidth = 220
-    imageHeight = 220
+    imageWidth = 2312
+    imageHeight = 1301
 
     [[params.profileMode.buttons]]
       name = "About"
