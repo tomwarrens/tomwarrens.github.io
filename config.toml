@@ -42,6 +42,16 @@ disableKinds = ["taxonomy", "term", "RSS"]
       name = "Contact"
       url = "/contact/"
 
+  [[params.socialIcons]]
+    name = "linkedin"
+    title = "LinkedIn"
+    url = "https://www.linkedin.com/in/tommaso-guerrini-ai/"
+
+  [[params.socialIcons]]
+    name = "kaggle"
+    title = "Kaggle (Career High #163)"
+    url = "https://www.kaggle.com/tomwarrens/code"
+
 [menu]
 
   [[menu.main]]
