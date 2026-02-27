@@ -1,0 +1,11 @@
+baseURL = "https://tomwarrens.github.io/"
+languageCode = "en-us"
+title = "Tommaso Guerrini"
+theme = "PaperMod"
+
+[params]
+  author = "Tommaso Guerrini"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  defaultTheme = "auto"
