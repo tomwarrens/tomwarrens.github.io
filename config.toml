@@ -21,6 +21,10 @@ disableKinds = ["taxonomy", "term", "RSS"]
     enabled = true
     title = "Tommaso Guerrini"
     subtitle = "Data Scientist focused on improving real-world ML systems and decision engines."
+    imageUrl = "images/monumentvalley.png"
+    imageTitle = "Monument Valley"
+    imageWidth = 220
+    imageHeight = 220
 
     [[params.profileMode.buttons]]
       name = "About"
