@@ -66,6 +66,17 @@ disableKinds = ["taxonomy", "term", "RSS"]
     title = "Time Series Forecasting (Manufacturing/Sales/Industry)"
     description = "Deployed forecasting systems for multiple time series in manufacturing, sales, and industrial planning."
 
+  partners = [
+    "Generali",
+    "Pirelli",
+    "Vodafone",
+    "Eni",
+    "Mediaset",
+    "doValue",
+    "Banca Sella",
+    "Magneti Marelli",
+  ]
+
   [[params.selectedWork]]
     title = "YesAlps Ski Booking Web App"
     domain = "Travel marketplace and geospatial product development"

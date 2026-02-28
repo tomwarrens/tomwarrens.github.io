@@ -1,13 +1,15 @@
 /* Homepage content sections: focus areas and feasibility sprint. */
 .focus-areas,
-.feasibility-sprint {
+.feasibility-sprint,
+.partners {
     width: 100%;
     max-width: min(1080px, 95vw);
     margin: 30px auto 10px;
 }
 
 .focus-areas h2,
-.feasibility-sprint h2 {
+.feasibility-sprint h2,
+.partners h2 {
     margin: 0 0 14px;
     font-size: 1.4rem;
 }
@@ -86,6 +88,27 @@
 .feasibility-btn.secondary {
     background: var(--entry);
     color: var(--primary);
+}
+
+.partners-lead {
+    margin: 0 0 10px;
+}
+
+.partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.partners-list li {
+    border: 1px solid var(--border);
+    background: var(--entry);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 860px) {

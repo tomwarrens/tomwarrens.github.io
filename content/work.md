@@ -6,17 +6,24 @@ Selected projects and technical work relevant to fraud detection, churn predicti
 
 ## Demos and Previews
 
-### YesAlps app demo
+{{< rawhtml >}}
+<div class="work-preview-grid">
+  <a class="work-preview-card" href="https://drive.google.com/drive/folders/1hFaDuKcl0l3bf48sGy5Hf7hI0S_D-5qj" target="_blank" rel="noopener noreferrer">
+    <img src="/yesalpsscreen.png" alt="YesAlps app preview screenshot" loading="lazy">
+    <span>YesAlps app demo (Google Drive)</span>
+  </a>
 
-- [Watch the YesAlps demo on Google Drive](https://drive.google.com/drive/folders/1hFaDuKcl0l3bf48sGy5Hf7hI0S_D-5qj)
+  <a class="work-preview-card" href="https://www.kaggle.com/tomwarrens/code" target="_blank" rel="noopener noreferrer">
+    <img src="/cardkaggle.png" alt="Kaggle code page preview" loading="lazy">
+    <span>Kaggle code portfolio</span>
+  </a>
 
-### Kaggle preview
-
-[![Kaggle code page preview](/cardkaggle.png)](https://www.kaggle.com/tomwarrens/code)
-
-### LightGBM project preview
-
-[![LightGBM inference-time FI preview](/cardcode.png)](https://github.com/tomwarrens/lightgbm_inference_fi)
+  <a class="work-preview-card" href="https://medium.com/@guerrinitom/run-for-your-leaves-a-simple-path-to-feature-importance-at-inference-time-in-tree-based-models-63afaf5a8c77" target="_blank" rel="noopener noreferrer">
+    <img src="/mediumarticle.png" alt="Medium article preview for LightGBM inference-time feature importance" loading="lazy">
+    <span>Medium article: LightGBM inference-time FI</span>
+  </a>
+</div>
+{{< /rawhtml >}}
 
 ## YesAlps Ski Booking Web App
 
