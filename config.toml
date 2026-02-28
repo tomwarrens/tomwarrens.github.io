@@ -23,6 +23,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
     "Production ML across finance, insurance, telco, and industry",
   ]
   partners = [
+    "CardoAI",
     "Generali",
     "Pirelli",
     "Vodafone",
