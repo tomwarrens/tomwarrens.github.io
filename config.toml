@@ -20,27 +20,19 @@ disableKinds = ["taxonomy", "term", "RSS"]
   [params.profileMode]
     enabled = true
     title = "Tommaso Guerrini"
-    subtitle = "Data Scientist focused on improving real-world ML systems and decision engines."
+    subtitle = "I build production ML systems for risk and growth: fraud detection (insurance), churn prediction (telco), default prediction (banking/finance), and forecasting (manufacturing, sales, industry)."
     imageUrl = "/images/monumentvalley.png"
     imageTitle = "Monument Valley"
     imageWidth = 2312
     imageHeight = 1301
 
     [[params.profileMode.buttons]]
-      name = "About"
-      url = "/about/"
-
-    [[params.profileMode.buttons]]
-      name = "Work"
-      url = "/work/"
-
-    [[params.profileMode.buttons]]
-      name = "CV"
-      url = "/cv/"
-
-    [[params.profileMode.buttons]]
-      name = "Contact"
+      name = "Book a 20-min call"
       url = "/contact/"
+
+    [[params.profileMode.buttons]]
+      name = "View selected work"
+      url = "/work/"
 
   [[params.socialIcons]]
     name = "linkedin"
