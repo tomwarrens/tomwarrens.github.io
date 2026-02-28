@@ -16,6 +16,12 @@ disableKinds = ["taxonomy", "term", "RSS"]
   ShowShareButtons = false
   ShowCodeCopyButtons = false
   defaultTheme = "auto"
+  profileHighlights = [
+    "Kaggle Code Master (career high #163)",
+    "Winner: TIM/CladAG churn classification challenge",
+    "Published: LightGBM inference-time feature importance",
+    "Production ML across finance, insurance, telco, and industry",
+  ]
 
   [params.profileMode]
     enabled = true
