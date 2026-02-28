@@ -8,14 +8,7 @@ Selected projects and technical work relevant to fraud detection, churn predicti
 
 ### YesAlps app demo
 
-{{< rawhtml >}}
-<video controls preload="metadata" style="width:100%;max-width:980px;border-radius:12px;border:1px solid rgba(127,127,127,0.25);">
-  <source src="/yesalpsdemo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-{{< /rawhtml >}}
-
-If video playback fails, use this backup link: [YesAlps demo file](/yesalpsdemo.mp4).
+- [Watch the YesAlps demo on Google Drive](https://drive.google.com/drive/folders/1hFaDuKcl0l3bf48sGy5Hf7hI0S_D-5qj)
 
 ### Kaggle preview
 
