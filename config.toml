@@ -26,7 +26,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   [params.profileMode]
     enabled = true
     title = "Tommaso Guerrini"
-    subtitle = "I build production ML systems for risk and growth: fraud detection (insurance), churn prediction (telco), default prediction (banking/finance), and forecasting (manufacturing, sales, industry)."
+    subtitle = "10+ years deploying machine learning in production across insurance, banking, telco, and manufacturing."
     imageUrl = "/images/monumentvalley.png"
     imageTitle = "Monument Valley"
     imageWidth = 2312
@@ -52,19 +52,19 @@ disableKinds = ["taxonomy", "term", "RSS"]
 
   [[params.focusAreas]]
     title = "Fraud Detection (Insurance)"
-    description = "Design and optimization of fraud detection pipelines that reduce false positives while preserving recall on high-value fraud cases."
+    description = "Deployed fraud detection models for a major insurance company (Generali)."
 
   [[params.focusAreas]]
     title = "Churn Prediction (Telco)"
-    description = "Customer-risk modeling to prioritize retention actions with interpretable drivers and business-aligned performance metrics."
+    description = "Built and productionized churn prediction models to prioritize retention actions."
 
   [[params.focusAreas]]
     title = "Default Prediction (Banking/Finance)"
-    description = "Credit-risk modeling and scorecard-style decision support for portfolio monitoring, underwriting, and risk-aware growth."
+    description = "Deployed loan default prediction models for underwriting and portfolio risk monitoring."
 
   [[params.focusAreas]]
     title = "Time Series Forecasting (Manufacturing/Sales/Industry)"
-    description = "Forecasting systems for demand and operations planning, balancing predictive accuracy with deployment simplicity."
+    description = "Deployed forecasting systems for multiple time series in manufacturing, sales, and industrial planning."
 
   [[params.selectedWork]]
     title = "YesAlps Ski Booking Web App"

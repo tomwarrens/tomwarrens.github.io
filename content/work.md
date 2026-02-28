@@ -4,6 +4,27 @@ title: "Work"
 
 Selected projects and technical work relevant to fraud detection, churn prediction, credit risk, and ML system design.
 
+## Demos and Previews
+
+### YesAlps app demo
+
+{{< rawhtml >}}
+<video controls preload="metadata" style="width:100%;max-width:980px;border-radius:12px;border:1px solid rgba(127,127,127,0.25);">
+  <source src="/yesalpsdemo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+{{< /rawhtml >}}
+
+If video playback fails, use this backup link: [YesAlps demo file](/yesalpsdemo.mp4).
+
+### Kaggle preview
+
+[![Kaggle code page preview](/cardkaggle.png)](https://www.kaggle.com/tomwarrens/code)
+
+### LightGBM project preview
+
+[![LightGBM inference-time FI preview](/cardcode.png)](https://github.com/tomwarrens/lightgbm_inference_fi)
+
 ## YesAlps Ski Booking Web App
 
 **Problem**  

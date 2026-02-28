@@ -81,35 +81,37 @@
 {{- end }}
 
 {{- with site.Params.selectedWork }}
-<section class="selected-work" id="selected-work">
-    <h2>Selected Work</h2>
-    <div class="selected-work-grid">
-        {{- range . }}
-        <article class="selected-work-card">
-            <h3>{{ .title | markdownify }}</h3>
-            {{- with .domain }}
-            <p class="selected-work-domain">{{ . | markdownify }}</p>
-            {{- end }}
-            <p>{{ .description | markdownify }}</p>
-            {{- with .result }}
-            <p class="selected-work-result">{{ . | markdownify }}</p>
-            {{- end }}
-            {{- if or .linkUrl .extraLinkUrl }}
-            {{- $primaryText := .linkText | default "Learn more" }}
-            {{- $secondaryText := .extraLinkText | default "Secondary link" }}
-            <div class="selected-work-links">
-                {{- with .linkUrl }}
-                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $primaryText }}</a>
+<details class="selected-work-disclosure" id="selected-work">
+    <summary>Selected Work</summary>
+    <section class="selected-work">
+        <div class="selected-work-grid">
+            {{- range . }}
+            <article class="selected-work-card">
+                <h3>{{ .title | markdownify }}</h3>
+                {{- with .domain }}
+                <p class="selected-work-domain">{{ . | markdownify }}</p>
                 {{- end }}
-                {{- with .extraLinkUrl }}
-                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $secondaryText }}</a>
+                <p>{{ .description | markdownify }}</p>
+                {{- with .result }}
+                <p class="selected-work-result">{{ . | markdownify }}</p>
                 {{- end }}
-            </div>
+                {{- if or .linkUrl .extraLinkUrl }}
+                {{- $primaryText := .linkText | default "Learn more" }}
+                {{- $secondaryText := .extraLinkText | default "Secondary link" }}
+                <div class="selected-work-links">
+                    {{- with .linkUrl }}
+                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $primaryText }}</a>
+                    {{- end }}
+                    {{- with .extraLinkUrl }}
+                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $secondaryText }}</a>
+                    {{- end }}
+                </div>
+                {{- end }}
+            </article>
             {{- end }}
-        </article>
-        {{- end }}
-    </div>
-</section>
+        </div>
+    </section>
+</details>
 {{- end }}
 
 {{- with site.Params.feasibilitySprint }}
