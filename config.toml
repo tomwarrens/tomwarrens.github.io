@@ -22,6 +22,16 @@ disableKinds = ["taxonomy", "term", "RSS"]
     "Published: LightGBM inference-time feature importance",
     "Production ML across finance, insurance, telco, and industry",
   ]
+  partners = [
+    "Generali",
+    "Pirelli",
+    "Vodafone",
+    "Eni",
+    "Mediaset",
+    "doValue",
+    "Banca Sella",
+    "Magneti Marelli",
+  ]
 
   [params.profileMode]
     enabled = true
@@ -65,17 +75,6 @@ disableKinds = ["taxonomy", "term", "RSS"]
   [[params.focusAreas]]
     title = "Time Series Forecasting (Manufacturing/Sales/Industry)"
     description = "Deployed forecasting systems for multiple time series in manufacturing, sales, and industrial planning."
-
-  partners = [
-    "Generali",
-    "Pirelli",
-    "Vodafone",
-    "Eni",
-    "Mediaset",
-    "doValue",
-    "Banca Sella",
-    "Magneti Marelli",
-  ]
 
   [[params.selectedWork]]
     title = "YesAlps Ski Booking Web App"
