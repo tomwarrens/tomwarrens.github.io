@@ -66,6 +66,20 @@
     {{- end}}
 </div>
 
+{{- with site.Params.focusAreas }}
+<section class="focus-areas" id="focus-areas">
+    <h2>Focus Areas</h2>
+    <div class="focus-areas-grid">
+        {{- range . }}
+        <article class="focus-area-card">
+            <h3>{{ .title | markdownify }}</h3>
+            <p>{{ .description | markdownify }}</p>
+        </article>
+        {{- end }}
+    </div>
+</section>
+{{- end }}
+
 {{- with site.Params.selectedWork }}
 <section class="selected-work" id="selected-work">
     <h2>Selected Work</h2>
@@ -93,6 +107,50 @@
             </div>
             {{- end }}
         </article>
+        {{- end }}
+    </div>
+</section>
+{{- end }}
+
+{{- with site.Params.feasibilitySprint }}
+{{- $primaryText := .ctaText | default "Apply via email" }}
+{{- $primaryUrl := .ctaUrl }}
+{{- $secondaryText := .secondaryText | default "Book a call" }}
+{{- $secondaryUrl := .secondaryUrl }}
+<section class="feasibility-sprint" id="feasibility-sprint">
+    <h2>{{ .title | markdownify }}</h2>
+    <p class="feasibility-intro">{{ .description | markdownify }}</p>
+
+    <div class="feasibility-grid">
+        {{- with .requirements }}
+        <div class="feasibility-block">
+            <h3>What You Send</h3>
+            <ul>
+                {{- range . }}
+                <li>{{ . | markdownify }}</li>
+                {{- end }}
+            </ul>
+        </div>
+        {{- end }}
+
+        {{- with .deliverables }}
+        <div class="feasibility-block">
+            <h3>What You Receive</h3>
+            <ul>
+                {{- range . }}
+                <li>{{ . | markdownify }}</li>
+                {{- end }}
+            </ul>
+        </div>
+        {{- end }}
+    </div>
+
+    <div class="feasibility-cta">
+        {{- with $primaryUrl }}
+        <a class="feasibility-btn primary" href="{{ . }}" rel="noopener">{{ $primaryText }}</a>
+        {{- end }}
+        {{- with $secondaryUrl }}
+        <a class="feasibility-btn secondary" href="{{ . }}" rel="noopener">{{ $secondaryText }}</a>
         {{- end }}
     </div>
 </section>

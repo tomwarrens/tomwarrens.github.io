@@ -50,6 +50,22 @@ disableKinds = ["taxonomy", "term", "RSS"]
     title = "Kaggle (Career High #163)"
     url = "https://www.kaggle.com/tomwarrens/code"
 
+  [[params.focusAreas]]
+    title = "Fraud Detection (Insurance)"
+    description = "Design and optimization of fraud detection pipelines that reduce false positives while preserving recall on high-value fraud cases."
+
+  [[params.focusAreas]]
+    title = "Churn Prediction (Telco)"
+    description = "Customer-risk modeling to prioritize retention actions with interpretable drivers and business-aligned performance metrics."
+
+  [[params.focusAreas]]
+    title = "Default Prediction (Banking/Finance)"
+    description = "Credit-risk modeling and scorecard-style decision support for portfolio monitoring, underwriting, and risk-aware growth."
+
+  [[params.focusAreas]]
+    title = "Time Series Forecasting (Manufacturing/Sales/Industry)"
+    description = "Forecasting systems for demand and operations planning, balancing predictive accuracy with deployment simplicity."
+
   [[params.selectedWork]]
     title = "YesAlps Ski Booking Web App"
     domain = "Travel marketplace and geospatial product development"
@@ -79,6 +95,26 @@ disableKinds = ["taxonomy", "term", "RSS"]
     linkUrl = "https://github.com/tomwarrens/lightgbm_inference_fi"
     extraLinkText = "Read the article"
     extraLinkUrl = "https://medium.com/@guerrinitom/run-for-your-leaves-a-simple-path-to-feature-importance-at-inference-time-in-tree-based-models-63afaf5a8c77"
+
+  [params.feasibilitySprint]
+    title = "1-Week Model Feasibility Sprint"
+    description = "Send a sample dataset and target definition. In one week, you receive a baseline model, error analysis, and concrete next-step roadmap."
+    ctaText = "Apply via email"
+    ctaUrl = "mailto:guerrinitom@gmail.com?subject=1-week%20model%20feasibility%20sprint"
+    secondaryText = "Book a 20-min call"
+    secondaryUrl = "/contact/"
+    requirements = [
+      "Business objective and decision context",
+      "Target definition and success metric",
+      "Sample dataset schema (or representative extract)",
+      "Constraints: timeline, deployment, and compliance",
+    ]
+    deliverables = [
+      "Baseline model with transparent evaluation",
+      "Error analysis and feature-level insights",
+      "Risk and data-quality assessment",
+      "Recommended production roadmap and next experiments",
+    ]
 
 [menu]
 

@@ -1,0 +1,96 @@
+/* Homepage content sections: focus areas and feasibility sprint. */
+.focus-areas,
+.feasibility-sprint {
+    width: 100%;
+    max-width: min(1080px, 95vw);
+    margin: 30px auto 10px;
+}
+
+.focus-areas h2,
+.feasibility-sprint h2 {
+    margin: 0 0 14px;
+    font-size: 1.4rem;
+}
+
+.focus-areas-grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.focus-area-card {
+    border: 1px solid var(--border);
+    background: var(--entry);
+    border-radius: 14px;
+    padding: 14px 15px;
+}
+
+.focus-area-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.02rem;
+}
+
+.feasibility-intro {
+    margin: 0 0 12px;
+}
+
+.feasibility-grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.feasibility-block {
+    border: 1px solid var(--border);
+    background: var(--entry);
+    border-radius: 14px;
+    padding: 14px 15px;
+}
+
+.feasibility-block h3 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+.feasibility-block ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.feasibility-block li + li {
+    margin-top: 6px;
+}
+
+.feasibility-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.feasibility-btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 8px 14px;
+    text-decoration: none;
+    border: 1px solid var(--border);
+}
+
+.feasibility-btn.primary {
+    background: var(--primary);
+    color: var(--theme);
+    border-color: var(--primary);
+}
+
+.feasibility-btn.secondary {
+    background: var(--entry);
+    color: var(--primary);
+}
+
+@media (max-width: 860px) {
+    .focus-areas-grid,
+    .feasibility-grid {
+        grid-template-columns: 1fr;
+    }
+}
