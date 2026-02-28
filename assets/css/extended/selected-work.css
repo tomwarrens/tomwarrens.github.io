@@ -1,0 +1,58 @@
+/* Homepage selected-work portfolio section. */
+.selected-work {
+    width: 100%;
+    max-width: min(1080px, 95vw);
+    margin: 36px auto 20px;
+}
+
+.selected-work h2 {
+    margin: 0 0 16px;
+    font-size: 1.4rem;
+}
+
+.selected-work-grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.selected-work-card {
+    border: 1px solid var(--border);
+    background: var(--entry);
+    border-radius: 14px;
+    padding: 14px 15px;
+}
+
+.selected-work-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.04rem;
+}
+
+.selected-work-domain {
+    margin: 0 0 8px;
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.selected-work-result {
+    margin: 10px 0 0;
+    font-weight: 600;
+}
+
+.selected-work-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.selected-work-links a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+@media (max-width: 860px) {
+    .selected-work-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -50,6 +50,36 @@ disableKinds = ["taxonomy", "term", "RSS"]
     title = "Kaggle (Career High #163)"
     url = "https://www.kaggle.com/tomwarrens/code"
 
+  [[params.selectedWork]]
+    title = "YesAlps Ski Booking Web App"
+    domain = "Travel marketplace and geospatial product development"
+    description = "Built a Java web app concept for YesAlps, inspired by Airbnb/Booking flows, with an interactive ski-slopes layer powered by self-scraped data."
+    result = "Delivered an end-to-end prototype combining backend application logic, data collection, and map-based navigation."
+
+  [[params.selectedWork]]
+    title = "TIM / CladAG Churn Classification Challenge"
+    domain = "Telco churn prediction"
+    description = "Designed a classification workflow to identify at-risk customers, with feature engineering and robust validation for leaderboard performance."
+    result = "Won the competition for TIM, Italy's largest mobile operator."
+
+  [[params.selectedWork]]
+    title = "Kaggle Modeling Portfolio"
+    domain = "Applied machine learning experimentation"
+    description = "Published notebooks that explore real datasets and train both gradient boosting and neural network models with reproducible evaluation flows."
+    result = "Reached Kaggle Code Master with a career-high world rank of 163."
+    linkText = "View Kaggle code"
+    linkUrl = "https://www.kaggle.com/tomwarrens/code"
+
+  [[params.selectedWork]]
+    title = "LightGBM Inference-Time Feature Importance"
+    domain = "Model interpretability for tree-based models"
+    description = "Proposed and implemented a practical approach to compute feature importance at inference time for production tree models."
+    result = "Published both an open-source repository and a technical Medium article."
+    linkText = "GitHub repository"
+    linkUrl = "https://github.com/tomwarrens/lightgbm_inference_fi"
+    extraLinkText = "Read the article"
+    extraLinkUrl = "https://medium.com/@guerrinitom/run-for-your-leaves-a-simple-path-to-feature-importance-at-inference-time-in-tree-based-models-63afaf5a8c77"
+
 [menu]
 
   [[menu.main]]
