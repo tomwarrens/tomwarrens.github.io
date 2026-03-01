@@ -1,0 +1,14 @@
+/* /teaching page uses the same preview language as /work with lighter 2-col cards. */
+.talks-preview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.talks-preview-grid .work-preview-card img {
+    aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 980px) {
+    .talks-preview-grid {
+        grid-template-columns: 1fr;
+    }
+}
