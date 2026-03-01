@@ -142,6 +142,12 @@ disableKinds = ["taxonomy", "term", "RSS"]
     weight = 20
 
   [[menu.main]]
+    identifier = "teaching"
+    name = "Teaching & Talks"
+    url = "/teaching/"
+    weight = 25
+
+  [[menu.main]]
     identifier = "cv"
     name = "CV"
     url = "/cv/"

@@ -1,0 +1,31 @@
+---
+title: "Teaching & Talks"
+---
+
+A selection of lectures, talks, and conference sessions I have delivered.
+
+## Upcoming
+
+### Machine Learning in Industry Course
+
+- **When:** 16th-20th March 2026
+- **Role:** Instructor for Day 1 and Day 2
+- **Event page:** https://www.digital-finance-msca.com/event-details-registration/machine-learning-in-industry
+
+## Past Talks and Lectures
+
+### From Chaos to Order: The Power of GitOps
+
+- **Format:** Meetup talk with Luca Grazioli
+- **Video:** https://www.youtube.com/watch?v=5NcxlnFyel8
+- **Meetup:** https://www.meetup.com/33a024bd-c3e8-4d82-b73f-3a94ce2e8039/events/293199666/
+
+### Guest Lecture at Universita degli Studi di Milano
+
+- **Context:** Lecture for the Neuroscience degree course taught by Cosimo Tuena
+- **Post:** https://www.linkedin.com/posts/tommaso-guerrini-ai_artificialintelligence-fintechinnovation-activity-7064629685669830656-Yped
+
+### Data Engineering Milano Conference
+
+- **Event page:** https://www.meetup.com/it-IT/data-engineering-italy/events/290673054/
+
