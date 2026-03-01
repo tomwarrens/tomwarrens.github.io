@@ -44,8 +44,8 @@ disableKinds = ["taxonomy", "term", "RSS"]
     imageHeight = 1301
 
     [[params.profileMode.buttons]]
-      name = "Book a 20-min call"
-      url = "/contact/"
+      name = "Book a 30-min call"
+      url = "https://calendly.com/tommaso-guerrini-cardoai/30min"
 
     [[params.profileMode.buttons]]
       name = "View selected work"
@@ -112,8 +112,8 @@ disableKinds = ["taxonomy", "term", "RSS"]
     description = "Send a sample dataset and target definition. In one week, you receive a baseline model, error analysis, and concrete next-step roadmap."
     ctaText = "Apply via email"
     ctaUrl = "mailto:guerrinitom@gmail.com?subject=1-week%20model%20feasibility%20sprint"
-    secondaryText = "Book a 20-min call"
-    secondaryUrl = "/contact/"
+    secondaryText = "Book a 30-min call"
+    secondaryUrl = "https://calendly.com/tommaso-guerrini-cardoai/30min"
     requirements = [
       "Business objective and decision context",
       "Target definition and success metric",
