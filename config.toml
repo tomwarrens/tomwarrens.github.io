@@ -74,6 +74,11 @@ disableKinds = ["taxonomy", "term", "RSS"]
     logo = "/logos/magnetimarelli.png"
     url = "https://www.marelli.com/"
 
+  [[params.partnerLogos]]
+    name = "Data Reply"
+    logo = "/logos/datareply.svg"
+    url = "https://www.reply.com/data-reply/en/"
+
   [params.profileMode]
     enabled = true
     title = "Tommaso Guerrini"

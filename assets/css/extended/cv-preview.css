@@ -1,0 +1,21 @@
+/* Inline PDF preview styling for /cv page. */
+.cv-preview-wrap {
+    margin: 14px 0 12px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--entry);
+}
+
+.cv-preview {
+    display: block;
+    width: 100%;
+    height: min(78vh, 1050px);
+    border: 0;
+}
+
+@media (max-width: 860px) {
+    .cv-preview {
+        height: 70vh;
+    }
+}
