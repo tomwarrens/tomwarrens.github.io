@@ -124,14 +124,34 @@
 </section>
 {{- end }}
 
-{{- with site.Params.partners }}
+{{- $partners := site.Params.partners }}
+{{- $partnerLogos := site.Params.partnerLogos }}
+{{- if or $partners $partnerLogos }}
 <section class="partners" id="partners">
     <h2>Partners</h2>
     <p class="partners-lead">Worked with teams at:</p>
-    <ul class="partners-list">
-        {{- range . }}
+
+    {{- if $partnerLogos }}
+    <div class="partners-marquee" aria-label="Partner logos">
+        <div class="partners-track">
+            {{- range $partnerLogos }}
+            <a class="partner-logo" href="{{ .url | default "#" }}" {{ if .url }}target="_blank" rel="noopener noreferrer"{{ end }} aria-label="{{ .name }}">
+                <img src="{{ .logo }}" alt="{{ .name }} logo" loading="lazy">
+            </a>
+            {{- end }}
+            {{- range $partnerLogos }}
+            <a class="partner-logo" href="{{ .url | default "#" }}" {{ if .url }}target="_blank" rel="noopener noreferrer"{{ end }} aria-hidden="true" tabindex="-1">
+                <img src="{{ .logo }}" alt="" loading="lazy">
+            </a>
+            {{- end }}
+        </div>
+    </div>
+    {{- else if $partners }}
+    <ul class="partners-list" aria-label="Partner names">
+        {{- range $partners }}
         <li>{{ . }}</li>
         {{- end }}
     </ul>
+    {{- end }}
 </section>
 {{- end }}

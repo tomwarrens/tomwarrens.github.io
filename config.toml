@@ -34,6 +34,26 @@ disableKinds = ["taxonomy", "term", "RSS"]
     "Magneti Marelli",
   ]
 
+  [[params.partnerLogos]]
+    name = "CardoAI"
+    logo = "/logos/cardoailogo.svg"
+    url = "https://www.cardoai.com/"
+
+  [[params.partnerLogos]]
+    name = "Generali"
+    logo = "/logos/generalilogo.png"
+    url = "https://www.generali.com/"
+
+  [[params.partnerLogos]]
+    name = "Pirelli"
+    logo = "/logos/pirellilogo.png"
+    url = "https://www.pirelli.com/"
+
+  [[params.partnerLogos]]
+    name = "Vodafone"
+    logo = "/logos/vodafone_logo.png"
+    url = "https://www.vodafone.com/"
+
   [params.profileMode]
     enabled = true
     title = "Tommaso Guerrini"
