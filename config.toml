@@ -110,7 +110,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
 
   [[params.focusAreas]]
     title = "Fraud Detection (Insurance)"
-    description = "Deployed fraud detection models for a major insurance company (Generali)."
+    description = "Deployed fraud detection models for a major insurance company."
 
   [[params.focusAreas]]
     title = "Churn Prediction (Telco)"
