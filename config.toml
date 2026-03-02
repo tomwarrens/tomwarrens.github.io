@@ -54,6 +54,26 @@ disableKinds = ["taxonomy", "term", "RSS"]
     logo = "/logos/vodafone_logo.png"
     url = "https://www.vodafone.com/"
 
+  [[params.partnerLogos]]
+    name = "Eni"
+    logo = "/logos/enilogo.png"
+    url = "https://www.eni.com/"
+
+  [[params.partnerLogos]]
+    name = "Mediaset"
+    logo = "/logos/mediaset.png"
+    url = "https://www.mediaset.com/"
+
+  [[params.partnerLogos]]
+    name = "Banca Sella"
+    logo = "/logos/bancasella.png"
+    url = "https://www.sella.it/"
+
+  [[params.partnerLogos]]
+    name = "Magneti Marelli"
+    logo = "/logos/magnetimarelli.png"
+    url = "https://www.marelli.com/"
+
   [params.profileMode]
     enabled = true
     title = "Tommaso Guerrini"
