@@ -91,10 +91,12 @@ disableKinds = ["taxonomy", "term", "RSS"]
     [[params.profileMode.buttons]]
       name = "Book a 20-min call"
       url = "https://calendly.com/tommaso-guerrini-cardoai/30min"
+      enabled = false
 
     [[params.profileMode.buttons]]
       name = "View selected work"
       url = "/work/"
+      enabled = true
 
   [[params.socialIcons]]
     name = "linkedin"
@@ -153,6 +155,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
     extraLinkUrl = "https://medium.com/@guerrinitom/run-for-your-leaves-a-simple-path-to-feature-importance-at-inference-time-in-tree-based-models-63afaf5a8c77"
 
   [params.feasibilitySprint]
+    enabled = false
     title = "1-Week Model Feasibility Sprint"
     description = "Send a sample dataset and target definition. In one week, you receive a baseline model, error analysis, and concrete next-step roadmap."
     ctaText = "Apply via email"

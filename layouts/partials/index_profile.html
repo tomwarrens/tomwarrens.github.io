@@ -43,7 +43,8 @@
 
         {{- partial "social_icons.html" -}}
 
-        {{- with .buttons }}
+        {{- $visibleButtons := where .buttons "enabled" "ne" false }}
+        {{- with $visibleButtons }}
         <div class="buttons">
             {{- range . }}
             <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
@@ -81,6 +82,7 @@
 {{- end }}
 
 {{- with site.Params.feasibilitySprint }}
+{{- if ne .enabled false }}
 {{- $primaryText := .ctaText | default "Apply via email" }}
 {{- $primaryUrl := .ctaUrl }}
 {{- $secondaryText := .secondaryText | default "Book a call" }}
@@ -122,6 +124,7 @@
         {{- end }}
     </div>
 </section>
+{{- end }}
 {{- end }}
 
 {{- $partners := site.Params.partners }}
