@@ -31,52 +31,6 @@
     text-underline-offset: 2px;
 }
 
-.work-tech-details {
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    background: var(--entry);
-    margin: 10px 0 22px;
-    overflow: hidden;
-}
-
-.work-tech-details summary {
-    list-style: none;
-    cursor: pointer;
-    padding: 10px 14px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--primary);
-    user-select: none;
-}
-
-.work-tech-details summary::-webkit-details-marker {
-    display: none;
-}
-
-.work-tech-details summary::after {
-    content: "+";
-    float: right;
-    font-weight: 700;
-}
-
-.work-tech-details[open] summary::after {
-    content: "-";
-}
-
-.work-tech-content {
-    border-top: 1px solid var(--border);
-    padding: 10px 14px 12px;
-}
-
-.work-tech-content p {
-    margin: 0;
-    line-height: 1.5;
-}
-
-.work-tech-content p + p {
-    margin-top: 8px;
-}
-
 .work-tech-groups {
     display: grid;
     gap: 14px;

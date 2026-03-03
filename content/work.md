@@ -38,16 +38,8 @@ I built a Java web app concept inspired by Airbnb/Booking flows, and added a ski
 **Result**  
 An end-to-end prototype combining backend development, data collection, and interactive map navigation.
 
-{{< rawhtml >}}
-<details class="work-tech-details">
-  <summary>Show technical details</summary>
-  <div class="work-tech-content">
-    <p><strong>Stack:</strong> Java web stack, SQL, HTML/CSS, data scraping, geospatial data integration.</p>
-    <p><strong>Deployment:</strong> End-to-end web prototype with booking flow and interactive ski-slopes layer.</p>
-    <p><strong>Role:</strong> Built product logic and data pipeline from scratch, including scraped slope data.</p>
-  </div>
-</details>
-{{< /rawhtml >}}
+**Technologies**  
+Java, SQL, HTML/CSS, data scraping, geospatial data integration.
 
 ### TIM / CladAG Churn Classification Challenge
 
@@ -60,16 +52,8 @@ I designed a churn classification pipeline with feature engineering and robust m
 **Result**  
 I won the challenge.
 
-{{< rawhtml >}}
-<details class="work-tech-details">
-  <summary>Show technical details</summary>
-  <div class="work-tech-content">
-    <p><strong>Stack:</strong> Python, pandas, scikit-learn, gradient boosting workflows, feature engineering.</p>
-    <p><strong>Validation:</strong> Structured offline evaluation with strong train/validation split discipline.</p>
-    <p><strong>Focus:</strong> Prioritization-ready churn scoring and robust model selection.</p>
-  </div>
-</details>
-{{< /rawhtml >}}
+**Technologies**  
+Python, pandas, scikit-learn, gradient boosting workflows, feature engineering.
 
 ### Kaggle Modeling Portfolio
 
@@ -84,16 +68,8 @@ Kaggle Code Master, career-high world rank: **#163**.
 
 - [Kaggle code portfolio](https://www.kaggle.com/tomwarrens/code)
 
-{{< rawhtml >}}
-<details class="work-tech-details">
-  <summary>Show technical details</summary>
-  <div class="work-tech-content">
-    <p><strong>Stack:</strong> Python, notebook-driven experimentation, gradient boosting and neural network baselines.</p>
-    <p><strong>Workflow:</strong> EDA, feature engineering, model training, error analysis, reproducible comparisons.</p>
-    <p><strong>Output:</strong> Public notebooks that show both exploration and modeling depth.</p>
-  </div>
-</details>
-{{< /rawhtml >}}
+**Technologies**  
+Python, notebook workflows, gradient boosting, neural network baselines, reproducible model evaluation.
 
 ### LightGBM Inference-Time Feature Importance
 
@@ -109,16 +85,8 @@ Published as open-source code and a technical article.
 - [GitHub repository](https://github.com/tomwarrens/lightgbm_inference_fi)
 - [Medium article](https://medium.com/@guerrinitom/run-for-your-leaves-a-simple-path-to-feature-importance-at-inference-time-in-tree-based-models-63afaf5a8c77)
 
-{{< rawhtml >}}
-<details class="work-tech-details">
-  <summary>Show technical details</summary>
-  <div class="work-tech-content">
-    <p><strong>Stack:</strong> Python, LightGBM internals, custom inference-time feature attribution logic.</p>
-    <p><strong>Deployment relevance:</strong> Designed to keep feature-importance computation aligned with production scoring behavior.</p>
-    <p><strong>Output:</strong> Open-source implementation plus long-form technical explanation.</p>
-  </div>
-</details>
-{{< /rawhtml >}}
+**Technologies**  
+Python, LightGBM internals, custom inference-time attribution logic.
 
 ## Production ML Case Highlights (Anonymized)
 
@@ -130,16 +98,8 @@ Built and deployed fraud-risk scoring to support claim triage.
 **Delivery**  
 From feature engineering to model training, evaluation, and integration in decision workflows.
 
-{{< rawhtml >}}
-<details class="work-tech-details">
-  <summary>Show technical details</summary>
-  <div class="work-tech-content">
-    <p><strong>Stack:</strong> Python, SQL, gradient boosting models, feature pipelines.</p>
-    <p><strong>Deployment:</strong> Production scoring integrated into operational claim-review process.</p>
-    <p><strong>Operational layer:</strong> Monitoring of model quality and periodic refresh workflow.</p>
-  </div>
-</details>
-{{< /rawhtml >}}
+**Technologies and MLOps**  
+Python, SQL, gradient boosting, feature pipelines, production scoring integration, monitoring, periodic retraining workflow.
 
 ### Loan Default Prediction
 
@@ -149,16 +109,8 @@ Developed and deployed default-risk models for underwriting and portfolio monito
 **Delivery**  
 Risk-score generation with model validation, calibration, and business-oriented thresholding.
 
-{{< rawhtml >}}
-<details class="work-tech-details">
-  <summary>Show technical details</summary>
-  <div class="work-tech-content">
-    <p><strong>Stack:</strong> Python, SQL, classification models, calibration and scorecard-style reporting.</p>
-    <p><strong>Deployment:</strong> Risk scores consumed by credit and risk teams in daily workflows.</p>
-    <p><strong>Operational layer:</strong> Versioned training/scoring pipeline with performance checks.</p>
-  </div>
-</details>
-{{< /rawhtml >}}
+**Technologies and MLOps**  
+Python, SQL, classification models, calibration, versioned training/scoring pipeline, production risk-score workflows, performance checks.
 
 ### Multi-Series Forecasting
 
@@ -168,16 +120,8 @@ Delivered forecasting systems across multiple time series for planning use cases
 **Delivery**  
 Built forecasting pipelines with backtesting and periodic model refresh.
 
-{{< rawhtml >}}
-<details class="work-tech-details">
-  <summary>Show technical details</summary>
-  <div class="work-tech-content">
-    <p><strong>Stack:</strong> Python, SQL, time-series feature engineering and model-based forecasting.</p>
-    <p><strong>Deployment:</strong> Automated recurring forecasts for planning and operational decision support.</p>
-    <p><strong>Operational layer:</strong> Multi-series backtesting framework and accuracy tracking over time.</p>
-  </div>
-</details>
-{{< /rawhtml >}}
+**Technologies and MLOps**  
+Python, SQL, time-series feature engineering, model-based forecasting, automated recurring runs, multi-series backtesting, accuracy monitoring.
 
 ## Technologies Used
 
@@ -192,6 +136,7 @@ Built forecasting pipelines with backtesting and periodic model refresh.
       <li>Neural Networks</li>
       <li>Classification</li>
       <li>Time Series Forecasting</li>
+      <li>Model Calibration</li>
     </ul>
   </section>
 
@@ -201,16 +146,27 @@ Built forecasting pipelines with backtesting and periodic model refresh.
       <li>SQL</li>
       <li>Feature Engineering</li>
       <li>Data Scraping</li>
+      <li>Data Validation</li>
       <li>Model Validation</li>
       <li>Backtesting</li>
-      <li>Monitoring</li>
+    </ul>
+  </section>
+
+  <section class="work-tech-group">
+    <h3>MLOps and Deployment</h3>
+    <ul class="work-tech-chip-list">
+      <li>Model Versioning</li>
+      <li>Training/Scoring Pipelines</li>
+      <li>Batch Scoring Workflows</li>
+      <li>Monitoring and Drift Checks</li>
+      <li>Scheduled Retraining</li>
+      <li>Production Integration</li>
     </ul>
   </section>
 
   <section class="work-tech-group">
     <h3>Product and Delivery</h3>
     <ul class="work-tech-chip-list">
-      <li>Production Scoring Workflows</li>
       <li>Decision-System Integration</li>
       <li>Risk Prioritization</li>
       <li>Java Web Application Development</li>
