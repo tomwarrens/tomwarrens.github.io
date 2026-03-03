@@ -38,9 +38,6 @@ I built a Java web app concept inspired by Airbnb/Booking flows, and added a ski
 **Result**  
 An end-to-end prototype combining backend development, data collection, and interactive map navigation.
 
-**Technologies**  
-Java, SQL, HTML/CSS, data scraping, geospatial data integration.
-
 ### TIM / CladAG Churn Classification Challenge
 
 **Problem**  
@@ -51,9 +48,6 @@ I designed a churn classification pipeline with feature engineering and robust m
 
 **Result**  
 I won the challenge.
-
-**Technologies**  
-Python, pandas, scikit-learn, gradient boosting workflows, feature engineering.
 
 ### Kaggle Modeling Portfolio
 
@@ -67,9 +61,6 @@ I published notebooks covering exploratory analysis, gradient boosting models, a
 Kaggle Code Master, career-high world rank: **#163**.
 
 - [Kaggle code portfolio](https://www.kaggle.com/tomwarrens/code)
-
-**Technologies**  
-Python, notebook workflows, gradient boosting, neural network baselines, reproducible model evaluation.
 
 ### LightGBM Inference-Time Feature Importance
 
@@ -85,9 +76,6 @@ Published as open-source code and a technical article.
 - [GitHub repository](https://github.com/tomwarrens/lightgbm_inference_fi)
 - [Medium article](https://medium.com/@guerrinitom/run-for-your-leaves-a-simple-path-to-feature-importance-at-inference-time-in-tree-based-models-63afaf5a8c77)
 
-**Technologies**  
-Python, LightGBM internals, custom inference-time attribution logic.
-
 ## Production ML Case Highlights (Anonymized)
 
 ### Insurance Fraud Detection
@@ -98,9 +86,6 @@ Built and deployed fraud-risk scoring to support claim triage.
 **Delivery**  
 From feature engineering to model training, evaluation, and integration in decision workflows.
 
-**Technologies and MLOps**  
-Python, SQL, gradient boosting, feature pipelines, production scoring integration, monitoring, periodic retraining workflow.
-
 ### Loan Default Prediction
 
 **Scope**  
@@ -108,9 +93,6 @@ Developed and deployed default-risk models for underwriting and portfolio monito
 
 **Delivery**  
 Risk-score generation with model validation, calibration, and business-oriented thresholding.
-
-**Technologies and MLOps**  
-Python, SQL, classification models, calibration, versioned training/scoring pipeline, production risk-score workflows, performance checks.
 
 ### Multi-Series Forecasting
 
@@ -120,59 +102,17 @@ Delivered forecasting systems across multiple time series for planning use cases
 **Delivery**  
 Built forecasting pipelines with backtesting and periodic model refresh.
 
-**Technologies and MLOps**  
-Python, SQL, time-series feature engineering, model-based forecasting, automated recurring runs, multi-series backtesting, accuracy monitoring.
-
-## Technologies Used
+## MLOps and Deployment
 
 {{< rawhtml >}}
-<div class="work-tech-groups">
-  <section class="work-tech-group">
-    <h3>Modeling</h3>
-    <ul class="work-tech-chip-list">
-      <li>Python</li>
-      <li>LightGBM</li>
-      <li>Gradient Boosting</li>
-      <li>Neural Networks</li>
-      <li>Classification</li>
-      <li>Time Series Forecasting</li>
-      <li>Model Calibration</li>
-    </ul>
-  </section>
-
-  <section class="work-tech-group">
-    <h3>Data and Pipelines</h3>
-    <ul class="work-tech-chip-list">
-      <li>SQL</li>
-      <li>Feature Engineering</li>
-      <li>Data Scraping</li>
-      <li>Data Validation</li>
-      <li>Model Validation</li>
-      <li>Backtesting</li>
-    </ul>
-  </section>
-
-  <section class="work-tech-group">
-    <h3>MLOps and Deployment</h3>
-    <ul class="work-tech-chip-list">
-      <li>Model Versioning</li>
-      <li>Training/Scoring Pipelines</li>
-      <li>Batch Scoring Workflows</li>
-      <li>Monitoring and Drift Checks</li>
-      <li>Scheduled Retraining</li>
-      <li>Production Integration</li>
-    </ul>
-  </section>
-
-  <section class="work-tech-group">
-    <h3>Product and Delivery</h3>
-    <ul class="work-tech-chip-list">
-      <li>Decision-System Integration</li>
-      <li>Risk Prioritization</li>
-      <li>Java Web Application Development</li>
-      <li>Interactive Map Features</li>
-      <li>Technical Communication</li>
-    </ul>
-  </section>
-</div>
+<section class="work-tech-group">
+  <ul class="work-tech-chip-list">
+    <li>Model Versioning</li>
+    <li>Training/Scoring Pipelines</li>
+    <li>Batch Scoring Workflows</li>
+    <li>Monitoring and Drift Checks</li>
+    <li>Scheduled Retraining</li>
+    <li>Production Integration</li>
+  </ul>
+</section>
 {{< /rawhtml >}}
