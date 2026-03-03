@@ -31,31 +31,6 @@
     text-underline-offset: 2px;
 }
 
-.work-tech-group {
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    background: var(--entry);
-    padding: 12px 13px;
-}
-
-.work-tech-chip-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.work-tech-chip-list li {
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: var(--theme);
-    padding: 5px 10px;
-    font-size: 0.84rem;
-    line-height: 1.3;
-}
-
 @media (max-width: 980px) {
     .work-preview-grid {
         grid-template-columns: 1fr;

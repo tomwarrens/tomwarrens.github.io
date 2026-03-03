@@ -101,18 +101,3 @@ Delivered forecasting systems across multiple time series for planning use cases
 
 **Delivery**  
 Built forecasting pipelines with backtesting and periodic model refresh.
-
-## MLOps and Deployment
-
-{{< rawhtml >}}
-<section class="work-tech-group">
-  <ul class="work-tech-chip-list">
-    <li>Model Versioning</li>
-    <li>Training/Scoring Pipelines</li>
-    <li>Batch Scoring Workflows</li>
-    <li>Monitoring and Drift Checks</li>
-    <li>Scheduled Retraining</li>
-    <li>Production Integration</li>
-  </ul>
-</section>
-{{< /rawhtml >}}
