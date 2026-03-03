@@ -31,8 +31,95 @@
     text-underline-offset: 2px;
 }
 
+.work-tech-details {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--entry);
+    margin: 10px 0 22px;
+    overflow: hidden;
+}
+
+.work-tech-details summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    user-select: none;
+}
+
+.work-tech-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.work-tech-details summary::after {
+    content: "+";
+    float: right;
+    font-weight: 700;
+}
+
+.work-tech-details[open] summary::after {
+    content: "-";
+}
+
+.work-tech-content {
+    border-top: 1px solid var(--border);
+    padding: 10px 14px 12px;
+}
+
+.work-tech-content p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.work-tech-content p + p {
+    margin-top: 8px;
+}
+
+.work-tech-groups {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 10px 0 6px;
+}
+
+.work-tech-group {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--entry);
+    padding: 12px 13px;
+}
+
+.work-tech-group h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+}
+
+.work-tech-chip-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.work-tech-chip-list li {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--theme);
+    padding: 5px 10px;
+    font-size: 0.84rem;
+    line-height: 1.3;
+}
+
 @media (max-width: 980px) {
     .work-preview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-tech-groups {
         grid-template-columns: 1fr;
     }
 }
