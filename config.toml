@@ -10,6 +10,9 @@ disableKinds = ["taxonomy", "term", "RSS"]
 [outputs]
   home = ["HTML"]
 
+[services.googleAnalytics]
+  id = "G-B7RFX0BSWS"
+
 [params]
   author = "Tommaso Guerrini"
   ShowReadingTime = false
