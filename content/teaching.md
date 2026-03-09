@@ -34,9 +34,12 @@ A selection of lectures, talks, and conference sessions I have delivered.
 
 ### Machine Learning in Industry Course
 
+I prepared the public teaching material for Day 1 and Day 2 in the course repository.
+
 - **When:** 16th-20th March 2026
 - **Role:** Instructor for Day 1 and Day 2
-- **Event page:** https://www.digital-finance-msca.com/event-details-registration/machine-learning-in-industry
+- **Event page:** [digital-finance-msca.com event page](https://www.digital-finance-msca.com/event-details-registration/machine-learning-in-industry)
+- **Course materials:** [github.com/CardoAI/ml_industry_course](https://github.com/CardoAI/ml_industry_course/tree/main)
 
 ## Past Talks and Lectures
 
