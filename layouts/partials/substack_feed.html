@@ -1,26 +1,13 @@
-{{- /* Fetch the Substack RSS feed at build time and return a slice of posts.
-       Returns an empty slice (with a warning) if the feed can't be fetched,
-       so a Substack outage never breaks the build. Call via partialCached. */ -}}
+{{- /* Return the Substack posts from data/substack.json as a slice of dicts.
+       Substack blocks GitHub Actions, so the feed is snapshotted locally with
+       scripts/update_substack.py instead of fetched at build time. */ -}}
 {{- $posts := slice }}
-{{- with site.Params.substack.feedUrl }}
-  {{- with try (resources.GetRemote .) }}
-    {{- with .Err }}
-      {{- warnf "substack feed: %s" . }}
-    {{- else with .Value }}
-      {{- $data := . | transform.Unmarshal }}
-      {{- $items := $data.channel.item }}
-      {{- if reflect.IsMap $items }}
-        {{- $items = slice $items }}
-      {{- end }}
-      {{- range $items }}
-        {{- $posts = $posts | append (dict
-          "title" (trim .title " ")
-          "link" .link
-          "date" (time.AsTime .pubDate)
-          "description" (.description | plainify | htmlUnescape | replaceRE `Thanks for reading .*$` "")
-        ) }}
-      {{- end }}
-    {{- end }}
-  {{- end }}
+{{- range site.Data.substack }}
+  {{- $posts = $posts | append (dict
+    "title" .title
+    "link" .link
+    "date" (time.AsTime .date)
+    "description" .description
+  ) }}
 {{- end }}
 {{- return $posts }}

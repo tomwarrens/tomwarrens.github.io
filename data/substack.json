@@ -1,0 +1,62 @@
+[
+  {
+    "title": "How to pick a tabular foundation model",
+    "link": "https://thetabularguy.substack.com/p/how-to-pick-a-tabular-foundation",
+    "date": "2026-10-05T08:31:03+00:00",
+    "description": "September brought seven model releases in fifteen days, so I went through the ones everyone is talking about to see how they differ and when I would pick which."
+  },
+  {
+    "title": "What works on tabular data when there are no labels",
+    "link": "https://thetabularguy.substack.com/p/what-works-on-tabular-data-when-there",
+    "date": "2026-09-28T12:59:00+00:00",
+    "description": "Tabular foundation models work well even with a few labels in context, but what do we do when we don't have labels?"
+  },
+  {
+    "title": "How to read the Elo ratings on TabArena and BeyondArena",
+    "link": "https://thetabularguy.substack.com/p/how-to-read-the-elo-ratings-on-tabarena",
+    "date": "2026-09-21T16:55:48+00:00",
+    "description": "After a year of new tabular foundation models and constantly shifting leaderboards, I thought it was time to explain how the Elo ratings are computed"
+  },
+  {
+    "title": "A Data Scientist in the Agentic World",
+    "link": "https://thetabularguy.substack.com/p/a-data-scientist-in-the-agentic-world",
+    "date": "2026-09-07T16:00:16+00:00",
+    "description": "How a Claude skill helps me in the least automatable part of my day to day: Exploratory Data Analysis. I used it in a Kaggle competition and here I show you how it looks."
+  },
+  {
+    "title": "The 2026 World Cup, forecasted by TabPFN",
+    "link": "https://thetabularguy.substack.com/p/the-2026-world-cup-forecasted-by",
+    "date": "2026-07-27T08:56:56+00:00",
+    "description": "A retrospective on the whole run: what I fed the model, what actually moved the score, how I bet each bracket."
+  },
+  {
+    "title": "Feature Engineering is not dead for TabPFN: here is what you need to know",
+    "link": "https://thetabularguy.substack.com/p/feature-engineering-is-not-dead-for",
+    "date": "2026-07-20T08:33:11+00:00",
+    "description": "A field note on why within-row arithmetic (products, ratios) is redundant for TabPFN, why cross-row aggregates still pay, and the two conditions that decide whether the second kind is worth your after"
+  },
+  {
+    "title": "Welcome Nori: Synthefy's New Regression TFM",
+    "link": "https://thetabularguy.substack.com/p/welcome-nori-synthefys-new-regression",
+    "date": "2026-07-06T12:53:01+00:00",
+    "description": "A first practitioner look at Nori's native regression intervals."
+  },
+  {
+    "title": "TabPFN: column order changes the prediction. Should you order your features?",
+    "link": "https://thetabularguy.substack.com/p/tabpfn-column-order-changes-the-prediction",
+    "date": "2026-07-03T10:42:44+00:00",
+    "description": "A deep dive into why TabPFN v3 is not permutation-invariant over its columns, the grouping mechanism behind it, and the narrow case where ordering columns by hand actually helps"
+  },
+  {
+    "title": "TabPFN: the hyperparameter search is gone. So what still moves performance? PART 1",
+    "link": "https://thetabularguy.substack.com/p/tabpfn-the-hyperparameter-search",
+    "date": "2026-06-30T13:00:00+00:00",
+    "description": "A deep dive into the TabPFNClassifier parameters, and a look at when the default ones are worth overriding."
+  },
+  {
+    "title": "So TabPFN works. What does a Data Scientist do differently now?",
+    "link": "https://thetabularguy.substack.com/p/so-tabpfn-works-what-does-a-data",
+    "date": "2026-06-23T13:01:25+00:00",
+    "description": "The last 10 years of Tabular ML"
+  }
+]

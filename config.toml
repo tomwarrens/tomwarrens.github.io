@@ -13,11 +13,6 @@ disableKinds = ["taxonomy", "term", "RSS"]
 [services.googleAnalytics]
   id = "G-B7RFX0BSWS"
 
-# The Substack feed is fetched at build time; keep `hugo server` from caching it forever.
-[caches.getresource]
-  dir = ":cacheDir/:project"
-  maxAge = "1h"
-
 [params]
   author = "Tommaso Guerrini"
   ShowReadingTime = false
@@ -210,10 +205,10 @@ disableKinds = ["taxonomy", "term", "RSS"]
     name = "The Tabular Guy"
     tagline = "a newsletter on tabular foundation models in practice."
     url = "https://thetabularguy.substack.com"
-    feedUrl = "https://thetabularguy.substack.com/feed"
     homepageLimit = 4
 
-    # Pinned on /writing/. Title is a fallback if the post drops out of the RSS feed.
+    # Posts come from data/substack.json (refresh with scripts/update_substack.py).
+    # Pinned on /writing/. Title is a fallback if the post drops out of the feed.
     [[params.substack.featured]]
       title = "The 2026 World Cup, forecasted by TabPFN"
       url = "https://thetabularguy.substack.com/p/the-2026-world-cup-forecasted-by"
