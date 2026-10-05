@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  # Daily rebuild so the homepage and /writing/ pick up new Substack posts.
+  schedule:
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -32,6 +35,10 @@ jobs:
 
       - name: Verify profile-mode home was rendered
         run: grep -En 'class=("profile"|profile)([ >])' public/index.html
+
+      # If the Substack feed failed to load, stop here and keep the last good deploy.
+      - name: Verify Substack posts were rendered
+        run: grep -q 'writing-card' public/index.html && grep -q 'writing-card' public/writing/index.html
 
       - uses: peaceiris/actions-gh-pages@v4
         with:

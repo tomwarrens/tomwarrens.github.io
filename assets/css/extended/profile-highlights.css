@@ -25,3 +25,8 @@
         padding: 5px 10px;
     }
 }
+
+/* Let the hero buttons sit side by side (PaperMod caps the row at 400px). */
+.profile .buttons {
+    max-width: min(980px, 95vw);
+}

@@ -58,7 +58,7 @@ Show practical ability to explore datasets and build strong predictive models ac
 I published notebooks covering exploratory analysis, gradient boosting models, and neural network workflows with reproducible evaluation.
 
 **Result**  
-Kaggle Code Master, career-high world rank: **#163**.
+Kaggle Notebooks Master, career high of **#1 in Italy** and **#163 worldwide**.
 
 - [Kaggle code portfolio](https://www.kaggle.com/tomwarrens/code)
 

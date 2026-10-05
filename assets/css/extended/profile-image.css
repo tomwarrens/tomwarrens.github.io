@@ -1,7 +1,9 @@
-/* Keep the profile hero image in its native landscape ratio and scale it responsively. */
+/* Crop the profile hero image to a short landscape band so the headline sits above the fold. */
 .profile .profile_inner > img {
     width: min(92vw, 980px);
     max-width: min(92vw, 980px);
-    height: auto;
+    height: clamp(200px, 38vh, 380px);
+    object-fit: cover;
+    object-position: 60% 30%;
     border-radius: 14px;
 }

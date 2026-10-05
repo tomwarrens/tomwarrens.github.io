@@ -1,0 +1,28 @@
+{{- /* Writing page body: pinned "start here" posts, the full feed, and a subscribe form. */ -}}
+{{- $posts := partialCached "substack_feed.html" .Page "substack-feed" }}
+{{- $substack := site.Params.substack }}
+
+{{- with $substack.featured }}
+<h2>Start here</h2>
+{{- $featured := slice }}
+{{- range . }}
+  {{- $url := .url }}
+  {{- with where $posts "link" $url }}
+    {{- $featured = $featured | append (index . 0) }}
+  {{- else }}
+    {{- $featured = $featured | append (dict "title" .title "link" $url) }}
+  {{- end }}
+{{- end }}
+{{- partial "substack_cards.html" (dict "posts" $featured) }}
+{{- end }}
+
+{{- with $posts }}
+<h2>All posts</h2>
+{{- partial "substack_cards.html" (dict "posts" .) }}
+{{- else }}
+<p>Read all posts on <a href="{{ $substack.url }}" target="_blank" rel="noopener noreferrer">{{ $substack.name }}</a>.</p>
+{{- end }}
+
+<h2>Subscribe</h2>
+<p>Get new posts by email.</p>
+<p><a class="writing-subscribe" href="{{ $substack.url }}/subscribe" target="_blank" rel="noopener noreferrer">Subscribe to {{ $substack.name }} &rarr;</a></p>

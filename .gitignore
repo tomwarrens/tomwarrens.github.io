@@ -1,0 +1,13 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Private files that must never reach this public repo
+contract.pdf
+contract_extracted.txt
+stupid.sql

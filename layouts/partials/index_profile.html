@@ -81,6 +81,21 @@
 </section>
 {{- end }}
 
+{{- with site.Params.substack }}
+{{- $substack := . }}
+{{- with partialCached "substack_feed.html" $ "substack-feed" }}
+<section class="latest-writing" id="latest-writing">
+    <h2>Latest writing</h2>
+    <p class="latest-writing-lead">From <a href="{{ $substack.url }}" target="_blank" rel="noopener noreferrer">{{ $substack.name }}</a>, {{ $substack.tagline }}</p>
+    {{- partial "substack_cards.html" (dict "posts" (first ($substack.homepageLimit | default 3) .)) }}
+    <p class="latest-writing-links">
+        <a href="/writing/">All posts &rarr;</a>
+        <a href="{{ $substack.url }}/subscribe" target="_blank" rel="noopener noreferrer">Subscribe on Substack &rarr;</a>
+    </p>
+</section>
+{{- end }}
+{{- end }}
+
 {{- with site.Params.feasibilitySprint }}
 {{- if ne .enabled false }}
 {{- $primaryText := .ctaText | default "Apply via email" }}
@@ -131,7 +146,7 @@
 {{- $partnerLogos := site.Params.partnerLogos }}
 {{- if or $partners $partnerLogos }}
 <section class="partners" id="partners">
-    <h2>Partners</h2>
+    <h2>Clients &amp; employers</h2>
     <p class="partners-lead">Worked with teams at:</p>
 
     {{- if $partnerLogos }}

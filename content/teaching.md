@@ -10,7 +10,7 @@ A selection of lectures, talks, and conference sessions I have delivered.
 <div class="work-preview-grid talks-preview-grid">
   <a class="work-preview-card" href="https://www.digital-finance-msca.com/event-details-registration/machine-learning-in-industry" target="_blank" rel="noopener noreferrer">
     <img src="/talks/ml_industry_course.png" alt="Machine Learning in Industry course preview" loading="lazy">
-    <span>Machine Learning in Industry course (upcoming)</span>
+    <span>Machine Learning in Industry course (MSCA Digital Finance, 2026)</span>
   </a>
 
   <a class="work-preview-card" href="https://www.youtube.com/watch?v=5NcxlnFyel8" target="_blank" rel="noopener noreferrer">
@@ -30,9 +30,14 @@ A selection of lectures, talks, and conference sessions I have delivered.
 </div>
 {{< /rawhtml >}}
 
-## Upcoming
+## Past Talks and Lectures
 
-### Machine Learning in Industry Course
+### European DataWarehouse Irish Securitisation Event, Dublin (2026)
+
+- **Format:** Keynote
+- **Topic:** AI, data quality, and automation in securitisation
+
+### Machine Learning in Industry Course (MSCA Digital Finance, 2026)
 
 I prepared the public teaching material for Day 1 and Day 2 in the course repository.
 
@@ -40,8 +45,6 @@ I prepared the public teaching material for Day 1 and Day 2 in the course reposi
 - **Role:** Instructor for Day 1 and Day 2
 - **Event page:** [digital-finance-msca.com event page](https://www.digital-finance-msca.com/event-details-registration/machine-learning-in-industry)
 - **Course materials:** [github.com/CardoAI/ml_industry_course](https://github.com/CardoAI/ml_industry_course/tree/main)
-
-## Past Talks and Lectures
 
 ### From Chaos to Order: The Power of GitOps
 

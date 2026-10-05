@@ -13,6 +13,11 @@ disableKinds = ["taxonomy", "term", "RSS"]
 [services.googleAnalytics]
   id = "G-B7RFX0BSWS"
 
+# The Substack feed is fetched at build time; keep `hugo server` from caching it forever.
+[caches.getresource]
+  dir = ":cacheDir/:project"
+  maxAge = "1h"
+
 [params]
   author = "Tommaso Guerrini"
   ShowReadingTime = false
@@ -20,10 +25,10 @@ disableKinds = ["taxonomy", "term", "RSS"]
   ShowCodeCopyButtons = false
   defaultTheme = "auto"
   profileHighlights = [
-    "Kaggle Code Master (career high #163)",
-    "Winner: TIM/CladAG churn classification challenge",
-    "Published: LightGBM inference-time feature importance",
-    "Production ML across finance, insurance, telco, and industry",
+    "TabICL v2 in production as champion PD model",
+    "[3rd place, Prior Labs TabPFN World Cup 2026](https://thetabularguy.substack.com/p/the-2026-world-cup-forecasted-by)",
+    "Kaggle Notebooks Master (career high #1 Italy, #163 world)",
+    "10 years of production ML in finance, insurance, and industry",
   ]
   partners = [
     "CardoAI",
@@ -85,7 +90,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   [params.profileMode]
     enabled = true
     title = "Tommaso Guerrini"
-    subtitle = "10+ years deploying machine learning in production across insurance, banking, telco, and manufacturing."
+    subtitle = "Head of Tabular AI at CardoAI. I build credit-risk models on tabular foundation models and write about them in [The Tabular Guy](https://thetabularguy.substack.com)."
     imageUrl = "/images/monumentvalley.png"
     imageTitle = "Monument Valley"
     imageWidth = 2312
@@ -101,31 +106,54 @@ disableKinds = ["taxonomy", "term", "RSS"]
       url = "/work/"
       enabled = true
 
+    [[params.profileMode.buttons]]
+      name = "Read The Tabular Guy"
+      url = "https://thetabularguy.substack.com"
+      enabled = true
+
   [[params.socialIcons]]
     name = "linkedin"
     title = "LinkedIn"
     url = "https://www.linkedin.com/in/tommaso-guerrini-ai/"
 
   [[params.socialIcons]]
+    name = "substack"
+    title = "The Tabular Guy (Substack)"
+    url = "https://thetabularguy.substack.com"
+
+  [[params.socialIcons]]
     name = "kaggle"
     title = "Kaggle (Career High #163)"
     url = "https://www.kaggle.com/tomwarrens/code"
 
+  [[params.socialIcons]]
+    name = "github"
+    title = "GitHub"
+    url = "https://github.com/tomwarrens"
+
+  [[params.focusAreas]]
+    title = "Credit Risk & Early Warning"
+    description = "Probability-of-default and early-warning models for SME lending, from loan-tape ingestion to a monitored scoring service."
+
+  [[params.focusAreas]]
+    title = "Tabular Foundation Models"
+    description = "TabPFN and TabICL in production: temporal validation, retrieved-context inference, and GPU serving."
+
+  [[params.focusAreas]]
+    title = "Explainability"
+    description = "SHAP and surrogate-model explanations for every score, built for risk teams and model validation."
+
+  [[params.focusAreas]]
+    title = "Anomaly Detection Without Labels"
+    description = "Unsupervised monitoring and predictive maintenance, with alarm thresholds calibrated on held-out time periods."
+
   [[params.focusAreas]]
     title = "Fraud Detection (Insurance)"
-    description = "Deployed fraud detection models for a major insurance company."
+    description = "Claim-triage fraud models taken from feature engineering to a live insurance decision workflow."
 
   [[params.focusAreas]]
-    title = "Churn Prediction (Telco)"
-    description = "Built and productionized churn prediction models to prioritize retention actions."
-
-  [[params.focusAreas]]
-    title = "Default Prediction (Banking/Finance)"
-    description = "Deployed loan default prediction models for underwriting and portfolio risk monitoring."
-
-  [[params.focusAreas]]
-    title = "Time Series Forecasting (Manufacturing/Sales/Industry)"
-    description = "Deployed forecasting systems for multiple time series in manufacturing, sales, and industrial planning."
+    title = "Time Series Forecasting"
+    description = "Hierarchical demand forecasting for manufacturing and real-time audience forecasting for media."
 
   [[params.selectedWork]]
     title = "YesAlps Ski Booking Web App"
@@ -143,7 +171,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
     title = "Kaggle Modeling Portfolio"
     domain = "Applied machine learning experimentation"
     description = "Published notebooks that explore real datasets and train both gradient boosting and neural network models with reproducible evaluation flows."
-    result = "Reached Kaggle Code Master with a career-high world rank of 163."
+    result = "Reached Kaggle Notebooks Master with a career high of #1 in Italy and #163 worldwide."
     linkText = "View Kaggle code"
     linkUrl = "https://www.kaggle.com/tomwarrens/code"
 
@@ -178,6 +206,30 @@ disableKinds = ["taxonomy", "term", "RSS"]
       "Recommended production roadmap and next experiments",
     ]
 
+  [params.substack]
+    name = "The Tabular Guy"
+    tagline = "a newsletter on tabular foundation models in practice."
+    url = "https://thetabularguy.substack.com"
+    feedUrl = "https://thetabularguy.substack.com/feed"
+    homepageLimit = 4
+
+    # Pinned on /writing/. Title is a fallback if the post drops out of the RSS feed.
+    [[params.substack.featured]]
+      title = "The 2026 World Cup, forecasted by TabPFN"
+      url = "https://thetabularguy.substack.com/p/the-2026-world-cup-forecasted-by"
+
+    [[params.substack.featured]]
+      title = "TabPFN: the hyperparameter search is gone. So what still moves performance? PART 1"
+      url = "https://thetabularguy.substack.com/p/tabpfn-the-hyperparameter-search"
+
+    [[params.substack.featured]]
+      title = "How to read the Elo ratings on TabArena and BeyondArena"
+      url = "https://thetabularguy.substack.com/p/how-to-read-the-elo-ratings-on-tabarena"
+
+    [[params.substack.featured]]
+      title = "Feature Engineering is not dead for TabPFN: here is what you need to know"
+      url = "https://thetabularguy.substack.com/p/feature-engineering-is-not-dead-for"
+
 [menu]
 
   [[menu.main]]
@@ -191,6 +243,12 @@ disableKinds = ["taxonomy", "term", "RSS"]
     name = "Work"
     url = "/work/"
     weight = 20
+
+  [[menu.main]]
+    identifier = "writing"
+    name = "Writing"
+    url = "/writing/"
+    weight = 22
 
   [[menu.main]]
     identifier = "teaching"

@@ -1,0 +1,16 @@
+{{- /* Render a grid of Substack post cards. Expects dict "posts" (slice from substack_feed.html). */ -}}
+{{- with .posts }}
+<div class="writing-grid">
+    {{- range . }}
+    <a class="writing-card" href="{{ .link }}" target="_blank" rel="noopener noreferrer">
+        {{- with .date }}
+        <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time>
+        {{- end }}
+        <h3>{{ .title }}</h3>
+        {{- with .description }}
+        <p>{{ . }}</p>
+        {{- end }}
+    </a>
+    {{- end }}
+</div>
+{{- end }}
